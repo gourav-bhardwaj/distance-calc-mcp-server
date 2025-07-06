@@ -1,0 +1,1 @@
+uv run distance_calc_mcp_server.py

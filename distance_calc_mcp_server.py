@@ -71,22 +71,6 @@ def get_location_from_coordinates(latitude: float, longitude: float) -> str:
         raise ValueError("No location data found for the given coordinates.")
     return json.dumps(data)
 
-# @mcp.tool(description="Get weather from latitude and longitude")
-# def get_weather_by_coordinates(latitude: float, longitude: float) -> str:
-#     """Get the weather of a location using latitude and longitude."""
-#     api_key = os.getenv('WEATHER_API_KEY')
-#     if not api_key:
-#         raise ValueError("Weather API key is not set in the environment variable WEATHER_API_KEY.")
-#     response = requests.get(
-#         'https://api.openweathermap.org/data/2.5/weather',
-#         params={'lat': latitude, 'lon': longitude, 'appid': api_key, 'units': 'metric'},
-#         timeout=10
-#     )
-#     if response.status_code != 200:
-#         raise ValueError(f"Error fetching weather data: {response.status_code}")
-#     weather_data = response.json()
-#     return json.dumps(weather_data)
-
 def main():
     """Run the FastMCP server."""
     mcp.run(transport="sse")

@@ -1,0 +1,5 @@
+python-dotenv>=0.9.9
+geopy>=2.4.1
+httpx[cli]>=0.28.1
+markitdown>=0.1.2
+mcp[cli]>=1.10.1  # Confirm this package is real or available in your index

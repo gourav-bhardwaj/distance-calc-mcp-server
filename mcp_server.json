@@ -1,0 +1,11 @@
+{
+  "mcpServers": {    
+    "weather": {
+      "command": "/Users/gouravkumar/Downloads/azr-mcp-server/.venv/bin/mcp",
+      "args": [
+        "run",
+        "/Users/gouravkumar/Downloads/azr-mcp-server/distance_calc_mcp_server.py"
+      ]
+    }
+  }
+}
